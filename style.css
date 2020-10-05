@@ -1,0 +1,422 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: #18181e;
+    -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+h1 {
+    font-size: 80px;
+    padding-top: 50px;
+    text-align: center;
+    color: #f1f1f1;
+}
+
+span {
+    display: inline-block;
+}
+
+span::first-letter {
+    color: rgb(93, 173, 18);
+    font-size: 100px;
+}
+
+span.dot {
+    width: 30px;
+    height: 30px;
+    background: rgb(93, 173, 18);
+    border-radius: 50%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+    height: 60vh;
+    margin: 50px auto;
+}
+
+.mot-depart,
+.mot-fin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 250px;
+}
+
+hr {
+    width: 40%;
+    height: 5px;
+    background: rgb(93,173,18);
+}
+
+.card, .empty-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    background: rgb(93,173,18);
+    background: linear-gradient(121deg, rgba(93,173,18,1) 0%, rgba(47,88,8,1) 65%);
+    box-shadow: 10px 10px 5px #000;
+    cursor: pointer;
+}
+
+.card p,
+.empty-card p {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #f1f1f1;
+}
+
+.result, .score, .high-score, .timer, .end-game {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.timer {
+    margin-top: 50px;
+}
+
+.end-game {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 50px;
+}
+
+.end-game p {
+    margin: 10px;
+}
+
+.result, .end-game {
+    color: rgb(93, 173, 18);
+}
+
+.score, .high-score, .timer {
+    color: #f1f1f1;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1920px) {
+    h1 {
+        font-size: 70px;
+        padding-top: 30px;
+    }
+
+    span::first-letter {
+        font-size: 90px;
+    }
+
+    .container {
+        width: 80vw;
+        height: 50vh;
+        margin: 70px auto;
+    }
+
+    .mot-depart,
+    .mot-fin {
+        width: 90%;
+        height: 200px;
+    }
+
+    .card,
+    .empty-card {
+        width: 120px;
+        height: 160px;
+    }
+
+    .card p,
+    .empty-card p {
+        font-size: 50px;
+    }
+
+    .end-game {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    span::first-letter {
+        font-size: 80px;
+    }
+
+    .container {
+        margin: 50px auto;
+    }
+
+    .card,
+    .empty-card {
+        width: 100px;
+        height: 135px;
+    }
+
+    .card p,
+    .empty-card p {
+        font-size: 40px;
+    }
+
+    .result, .score, .high-score, .timer {
+        font-size: 25px;
+    }
+
+    .end-game {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        margin: 30px auto;
+    }
+
+    .card,
+    .empty-card {
+        width: 80px;
+        height: 105px;
+    }
+
+    .card p,
+    .empty-card p {
+        font-size: 30px;
+    }
+
+    .result, .score, .high-score, .timer {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .timer {
+        margin-top: 30px;
+    }
+
+    .end-game {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    h1 {
+        padding-top: 100px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .timer {
+        margin-top: 70px;
+    }
+
+    .end-game {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    h1 {
+        font-size: 40px;
+        padding-top: 50px;
+    }
+
+    span::first-letter {
+        font-size: 60px;
+    }
+
+    span.dot {
+        width: 20px;
+        height: 20px;
+    }
+
+    .container {
+        height: 40vh;
+        margin: 80px auto;
+    }
+
+    .mot-depart,
+    .mot-fin {
+        width: 100%;
+    }
+    
+    .card,
+    .empty-card {
+        width: 40px;
+        height: 60px;
+    }
+
+    .card p,
+    .empty-card p {
+        font-size: 18px;
+    }
+    
+    .end-game {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .end-game p {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 950px) and (max-height: 500px) {
+    h1 {
+        font-size: 40px;
+        padding-top: 0;
+    }
+
+    span::first-letter {
+        font-size: 60px;
+    }
+
+    span.dot {
+        width: 20px;
+        height: 20px;
+    }
+
+    .container {
+        margin: 10px auto;
+        height: 50vh;
+    }
+
+    .card,
+    .empty-card {
+        width: 60px;
+        height: 80px;
+    }
+
+    .card p,
+    .empty-card p {
+        font-size: 25px;
+    }
+
+    .timer {
+        margin-top: 10px;
+    }
+
+    .result, .score, .high-score, .timer {
+        font-size: 20px;
+    }
+
+    .result, .score, .high-score {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .end-game {
+        font-size: 20px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 350px) and (orientation: portrait) {
+    h1 {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    span::first-letter {
+        font-size: 40px;
+    }
+
+    span.dot {
+        width: 15px;
+        height: 15px;
+    }
+
+    .container {
+        height: 40vh;
+        margin: 30px auto;
+    }
+    
+    .card,
+    .empty-card {
+        width: 35px;
+        height: 50px;
+    }
+
+    .card p,
+    .empty-card p {
+        font-size: 16px;
+    }
+
+    .result, .score, .high-score, .timer {
+        font-size: 20px;
+    }
+
+    .timer {
+        margin-top: 30px;
+    }
+    
+    .end-game {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .end-game p {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) and (max-height: 420px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    span::first-letter {
+        font-size: 45px;
+    }
+
+    span.dot {
+        width: 15px;
+        height: 15px;
+    }
+
+    .container {
+        margin: 5px auto;
+    }
+
+    .card,
+    .empty-card {
+        width: 40px;
+        height: 60px;
+    }
+
+    .card p,
+    .empty-card p {
+        font-size: 18px;
+    }
+
+    .timer {
+        margin-top: 5px;
+    }
+
+    .result, .score, .high-score, .timer {
+        font-size: 16px;
+    }
+
+    .end-game {
+        font-size: 18px;
+    }
+}
