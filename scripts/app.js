@@ -8,7 +8,7 @@ const scoreDisplay = document.querySelector('.score');
 const highScoreDisplay = document.querySelector('.high-score');
 const timeDisplay = document.querySelector('.timer');
 const endGameDisplay = document.querySelector('.end-game');
-const h1AllSpan = document.querySelectorAll('h1 span');
+const h1AllSpan = document.querySelectorAll('h1 span:not(.exclamation-mark)');
 const hr = document.querySelector('hr');
 
 // Les variables
