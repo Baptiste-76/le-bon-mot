@@ -6,6 +6,8 @@
 
 body {
     height: 100vh;
+    /* font-family: 'Balsamiq Sans', cursive; */
+    font-family: 'Righteous', cursive;
     background: #18181e;
     -webkit-user-select: none;
         -moz-user-select: none;

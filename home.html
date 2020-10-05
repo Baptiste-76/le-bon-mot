@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Le Bon Mot">
+    <meta property="og:url" content="https://le-bon-mot.herokuapp.com">
+    <meta property="og:title" content="Le Bon Mot" name="title">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://le-bon-mot.herokuapp.com/ressources/og-image.png" name="image">
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1921" />
+    <meta property="og:image:height" content="1263" />
+    <meta property="og:description" content="Reconstituez des mots et faites le meilleur score !" name="description">
+    <meta name="author" content="Baptiste Bidaux">
+
+    <!-- Google Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Le Bon Mot</title>
+</head>
+<body>
+    <h1>
+        <span>Le</span>
+        <span>Bon</span>
+        <span>Mot</span>
+        <span class="dot"></span>
+    </h1>
+
+    <div class="timer">Temps restant : 60</div>
+
+    <div class="container">
+        <div class="mot-depart"></div>
+        <hr>
+        <div class="mot-fin"></div>
+
+        <div class="end-game"></div>
+    </div>
+
+    <div class="result"></div>
+    <div class="score">Score : 0</div>
+    <div class="high-score">Meilleur Score : 0</div>
+
+    <!-- GreenSock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+    <!-- Drag & Drop pour mobile devices -->
+    <script src="scripts/DragDropTouch.js"></script>
+
+    <!-- Script -->
+    <script type="module" src="scripts/app.js"></script>
+</body>
+</html>
