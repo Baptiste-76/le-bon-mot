@@ -19,6 +19,14 @@ let arrayForChecking = [];
 let score = 0;
 let time = 60;
 
+// Test pour détecter les mobile devices
+const main = document.querySelector('.main');
+const tactileDevices = document.querySelector('.tactile-devices');
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    main.style.display = "none";
+    tactileDevices.style.display = "flex";
+}
+
 // On crée un interval pour le chrono
 let timer = setInterval(() => {
     setTime();
