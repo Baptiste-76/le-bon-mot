@@ -240,7 +240,7 @@ hr {
 }
 
 /* Pour les appareils tactiles */
-@media (pointer: coarse) and (hover: none) {
+@media only screen and (any-hover: none) and (any-pointer: coarse) {
     .main {
         display: none;
     }
